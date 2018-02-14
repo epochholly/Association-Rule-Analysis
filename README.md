@@ -15,7 +15,7 @@
 - Rule generation: generate high confidence rules from each frequent itemset, where each rule is a binary partitioning of a frequent itemset. 
   - Definition of confidence: $c(X\rightarrow Y) = \frac{\sigma(X\cup Y)}{\sigma(X)}$
   - For each itemset, the confidence of rules generated from the same itemset satisfying: 
-  $c(BCD\rightarrow A)\gec(BC\rightarrow AD)\gec(B\rightarrow ACD)$. If $$c(BCD\rightarrow A)$ is low confident, then all others are low in confidence as well.
+  $c(BCD\rightarrow A)\ge c(BC\rightarrow AD)\ge c(B\rightarrow ACD)$. If $c(BCD\rightarrow A)$ is low confident, then all others are low in confidence as well.
   
 ## Data
 The dataset is from a foodmart database. The transactions are recoded with simpler format. The product table can be used for reference.
